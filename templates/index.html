@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleindex.css') }}">  
+  <title>Prediction</title>  
+</head>
+<body>
+    <h1>KNOW IT !!!</h1>
+    <div class="login">
+        <h2>Select the dataset to continue</h2>
+        <br>
+        <form action="{{ url_for('rpizza')}}" method="POST">     
+            <button id="pizza" type="submit" 
+                    class="btn btn-primary btn-block btn-large">Pizza Liking</button>
+        </form>
+        <br>
+        <form action="{{ url_for('rfuel')}}" method="POST">
+            <button id="fuel" type="submit" 
+                    class="btn btn-primary btn-block btn-large">Fuel Price</button>
+        </form>
+        
+    </div>
+</body>
+</html>
